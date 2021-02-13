@@ -3,7 +3,7 @@
 //  SwiftUIGradients
 //
 //  Created by 宇宣 Chen on 2021/2/13.
-//
+//  Reference: https://www.youtube.com/watch?v=V93lFg4fedY&list=PL5PR3UyfTWvfgx9W8WJ9orQf6N1tx0oxN&index=6
 
 import SwiftUI
 
@@ -11,11 +11,13 @@ struct ContentView: View {
     var body: some View {
         ZStack{
             LinearGradient(gradient: Gradient(colors:[
+       
                 Color("myColor"),
                 Color.purple
             ]),
             startPoint: .top,
             endPoint: .bottom)
+            //allow image to be full screen
             .ignoresSafeArea(.all, edges: .all)
             
             VStack {
