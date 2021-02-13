@@ -23,6 +23,7 @@ struct ContentView: View {
             VStack {
                 Image(systemName: "sun.max.fill")
                     .resizable()
+                    //renderingMode must be coded first before .frame
                     .renderingMode(.original)
                     .frame(width: 200, height: 200, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .padding()
@@ -31,6 +32,7 @@ struct ContentView: View {
                                   weight: .semibold,
                                   design: .default))
                     .foregroundColor(.white)
+            //Spacer automatically fill up all available space on their axis of expansion.
             Spacer()
             }
         }
