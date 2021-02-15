@@ -3,7 +3,7 @@
 //  faceBook
 //
 //  Created by 宇宣 Chen on 2021/2/14.
-//
+//. https://www.youtube.com/watch?v=6_ojHBU_J8g&list=PL5PR3UyfTWvfgx9W8WJ9orQf6N1tx0oxN&index=7
 
 import SwiftUI
 let stories = ["story2","story3","story4","story5","story6"]
