@@ -3,7 +3,7 @@
 //  swiftUIState
 //
 //  Created by 宇宣 Chen on 2021/2/16.
-//
+//. Reference: https://www.youtube.com/watch?v=5G7IVEYtaxo&list=PL5PR3UyfTWvfgx9W8WJ9orQf6N1tx0oxN&index=13
 
 import SwiftUI
 
@@ -17,13 +17,12 @@ struct ContentView: View {
         Image("image1")
     ]
     
-    @State var isZoomed : Bool = false
     
     var body: some View {
         NavigationView {
             List(0 ..< 3) { index in
                 NavigationLink(
-                    
+                    // Use extract subview by command + left key
                     destination: MyImageView(image: self.iamges[index], colorIndex: index)) {
                     Text("\(index+1)")
                 }
@@ -60,6 +59,7 @@ struct MyImageView: View {
         
         .background(color[colorIndex])
         .onTapGesture {
+            //the below if else prevents index out of range
             if self.colorIndex < 2 {
                 self.colorIndex += 1
             }
